@@ -24,11 +24,7 @@ urlpatterns = [
     path('user/login/',handle_user_login,name="user_login"),
     path('user/signup/',handle_user_signup),
     path('user/getinfo/',get_user_info),
-    path('api/auth/', include('rest_framework.urls')),
-    path('rest/auth', include('rest_auth.urls')),
-    path('rest/auth/registration/', include('rest_auth.registration.urls)'),
     path('user/logout/',user_logout),
-    path('api/', include('articles.api.urls')),
     path('item/create',create_item),
     path('item/update',update_item),
     path('item/delete',delete_item),
@@ -36,4 +32,5 @@ urlpatterns = [
     path('item/get_all',get_all),
     re_path('.*', TemplateView.as_view(template_name='index.html')),
  ]
+
 
