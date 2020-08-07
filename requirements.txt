@@ -9,6 +9,7 @@ Cython==0.29.16
 distlib==0.3.1
 dj-database-url==0.5.0
 Django==3.0.5
+django-cors-headers==3.4.0
 django-environ==0.4.5
 django-heroku==0.3.1
 django-utils-six==2.0
