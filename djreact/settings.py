@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'rest_framework.authtoken',  # For token based authentication
-    'todo_app',  # main app
+    'articles',  # main app
 ]
 
 MIDDLEWARE = [
