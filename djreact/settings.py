@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'x8(rx%y0+dnl9&crb&n4pols6&9h#wfa!=mj3)$7w7&i3b+4q%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["djangoreact-sahil-todo-app.herokuapp.com", "127.0.0.1"]
 
@@ -138,6 +138,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 CORS_ORIGIN_ALLOW_ALL = True
-# CORS_ORIGIN_WHITELIST = ('localhost:3000/')
+#CORS_ORIGIN_WHITELIST = ('localhost:3000/')
 
 django_heroku.settings(locals())

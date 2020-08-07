@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn  djreact-todo.wsgi --log-file -
+web: gunicorn  djreact.wsgi --log-file -
