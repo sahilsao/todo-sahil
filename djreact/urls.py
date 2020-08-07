@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include, re_path
+from django.urls import path, include, re_path
 from rest_framework import routers
 from django.views.generic import TemplateView
 from todo_app.views import handle_user_login,handle_user_signup,get_user_info,user_logout,create_item,delete_item,get_item,update_item,get_all
@@ -30,6 +30,5 @@ urlpatterns = [
     path('item/delete',delete_item),
     path('item/get',get_item),
     path('item/get_all',get_all),
-    path('api/', include('djreact.api.urls')),
     re_path('.*', TemplateView.as_view(template_name ='index.html'))
 ]
