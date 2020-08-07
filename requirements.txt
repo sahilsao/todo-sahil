@@ -7,8 +7,10 @@ cPython==0.0.5
 cx-Oracle==7.3.0
 Cython==0.29.16
 distlib==0.3.1
+dj-database-url==0.5.0
 Django==3.0.5
 django-environ==0.4.5
+django-heroku==0.3.1
 django-utils-six==2.0
 environ==1.0
 filelock==3.0.12
@@ -17,6 +19,7 @@ mysql-connector-python==8.0.19
 numpy==1.18.5
 pandas==1.0.4
 pep8==1.7.1
+psycopg2==2.8.5
 psycopg2-binary==2.8.4
 pycodestyle==2.5.0
 pymongo==3.10.1
