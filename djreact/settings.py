@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'x8(rx%y0+dnl9&crb&n4pols6&9h#wfa!=mj3)$7w7&i3b+4q%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['djangoreact-sahil-todo-app.herokuapp.com','safe-harbor-63955.herokuapp.com', '127.0.0.1']
 
