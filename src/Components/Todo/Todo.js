@@ -46,7 +46,7 @@ class Todo extends Component {
         }
     };
 
-    fetch('http://127.0.0.1:8000/item/get_all', requestOptions)
+    fetch('/item/get_all', requestOptions)
     .then(response => response.json())
     .then(data => {
 
@@ -115,7 +115,7 @@ class Todo extends Component {
         }
     };
 
-    fetch('http://127.0.0.1:8000/user/getinfo/', requestOptions)
+    fetch('/user/getinfo/', requestOptions)
     .then(response => response.json())
     .then(data => {
         this.setState({
@@ -216,7 +216,7 @@ class Todo extends Component {
             body: JSON.stringify(updateItem) 
         };
 
-        fetch('http://127.0.0.1:8000/item/update', requestOptions)
+        fetch('/item/update', requestOptions)
         .then(response => {
           if(response.status !== 200) {
               alert("There was some problem with that. We're currently working on fixing it. Thank You.");
@@ -293,7 +293,7 @@ class Todo extends Component {
             body: JSON.stringify(removeItem) 
         };
 
-        fetch('http://127.0.0.1:8000/item/delete', requestOptions)
+        fetch('/item/delete', requestOptions)
         .then(response => {
           if(response.status !== 200){
             alert("There was some problem with that. We're currently working on fixing it. Thank You.");

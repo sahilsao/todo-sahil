@@ -64,7 +64,7 @@ class SignUp extends Component {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(signUpData)
                 };
-                fetch('http://127.0.0.1:8000/user/signup/', requestOptions)
+                fetch('/user/signup/', requestOptions)
                 .then(response => {
                     if (response.status === 200) {
                         alert("Registered Successfully, Login with your username and password.");

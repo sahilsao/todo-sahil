@@ -48,7 +48,7 @@ class EditTask extends React.Component {
             body: JSON.stringify(updateItem) 
         };
 
-        fetch('http://127.0.0.1:8000/item/update', requestOptions)
+        fetch('/item/update', requestOptions)
         .then(response => {
             if(response.status === 200){
                 this.props.updateData();

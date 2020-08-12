@@ -48,7 +48,7 @@ class AddTask extends React.Component {
             body: JSON.stringify(sendItem) 
         };
 
-        fetch('http://127.0.0.1:8000/item/create', requestOptions)
+        fetch('/item/create', requestOptions)
         .then(response => {
             if(response.status === 200){
                 this.props.addnewtask(this.state.item);
