@@ -20,10 +20,10 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.authtoken.models import Token
 
 
-# from django.views.generic import TemplateView
-# from django.views.decorators.cache import never_cache
+from django.views.generic import TemplateView
+from django.views.decorators.cache import never_cache
 
-# index = never_cache(TemplateView.as_view(template_name='index.html'))
+index = never_cache(TemplateView.as_view(template_name='index.html'))
 # class TodoItemsView(viewsets.ModelViewSet): #performs automatic CRUD ops
 #     serializer_class=TodoItemSerializer
 #     queryset=TodoItem.objects.all()

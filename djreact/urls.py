@@ -30,7 +30,7 @@ urlpatterns = [
     path('item/delete',delete_item),
     path('item/get',get_item),
     path('item/get_all',get_all),
-    re_path('.*', TemplateView.as_view(template_name='index.html')),
-              ]
+    #re_path('.*', TemplateView.as_view(template_name='index.html')),
+]
 
 
